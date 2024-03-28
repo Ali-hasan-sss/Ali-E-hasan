@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>ali hasan</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
   <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,13 +15,18 @@
   <section class="home" id="home">
     <nav>
       <h2>Ali <span>Hasan</span></h2>
-      <ul>
+      <ul id="action">
         <li><a href="#about">about me</a></li>
         <li><a href="#services">services</a></li>
         <li><a href="#skills">skills</a></li>
         <li><a href="#portfolio">portfolio</a></li>
       </ul>
       <a href="#" class="btnn">subscribe</a>
+    <button id="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>  
     </nav>
     <div class="container">
       <div class="container-texts">
@@ -243,7 +248,7 @@
         <img src="createv.jpg" alt="createv">
         <div class="card-info">
         <h4 class="text-center">Createv<span>Menu</span></h4> 
-        <a href="https://ali-hasan-sss.github.io/Menu/" target="blank">visit website</a>
+        <a href="#" target="blank">visit website</a>
         </div>
       </div>
 <!--card 4-->
@@ -284,53 +289,14 @@
     </div>
   </footer>
   <!--menu -->
-   <button id="open" class="btn">menu</button>
-  <button id="close" class="btn">close</button>
-  <div class="menu" id="menu">
-    <ul>
-      <li><a href="#home">home</a></li>
-      <hr>
-      <li><a href="#about">abut me</a></li>
-      <hr>
-      <li><a href="#skills">skills</a></li>
-      <hr>
-      <li><a href="#services">services</a></li>
-      <hr>
-      <li><a href="#portfolio">portfolio</a></li>
-      <hr>
-      <li><a href="https://www.facebook.com/eliano.hasan" target="blank"><i class="bi fb bi-facebook"></i> facebook</a></li>
-      <hr>
-      <li><a href="https://www.instagram.com/ali.e.hasan.92?igsh=cWtjaXRheHFtanA2:" target="blank"><i class="bi ig bi-instagram"></i> instagram</a></li>
-      <hr>
-      <li><a href="https://github.com/Ali-hasan-sss" target="blank"><i class="bi git bi-github"></i> github</a></li>
-      <hr>
-      <li><a href="https://www.linkedin.com/in/ali-hasan-536312297" target="blank"><i class="bi ln bi-linkedin"></i> linkedin</a></li>
-      <hr>
-      <li><a href="https://api.whatsapp.com/send/?phone=+963994488858" target="blank"><i class="bi wa bi-whatsapp"></i> whatsapp</a></li>
-      <hr>
-    </ul>
-    <hr>
-  </div>
-  
+
   <button id="btn"><i class="bi bi-arrow-up-circle-fill"></i></button>
   
    <script>
-let close = document.getElementById('close');
-let open = document.getElementById('open');
-let menu = document.getElementById('menu');
-let btn = document.getElementById('btn');
+const menu = document.getElementById('menu');
+const btn = document.getElementById('btn');
+const action = document.getElementById('action');
   
-open.onclick = function(){
-    menu.style.left='0';
-    open.style.left='-200px';
-    close.style.left='200px';
-    close.style.background='red';
-}
-close.onclick = function(){
-    menu.style.left='-200px';
-    open.style.left='0px';
-    close.style.left='-200px';
-}
 window.onscroll = function(){
           if (scrollY >= 750){
             btn.style.display = 'block';
@@ -338,9 +304,14 @@ window.onscroll = function(){
             btn.style.display = 'none';
         }
 }
-  
+
   btn.onclick = function(){
   scroll(0,0)
+}
+menu.addEventListener("click",()=>{hundleMenu();})
+function hundleMenu(){
+  menu.classList.toggle("is-active");
+  action.classList.toggle("is-active");
 }
    </script>
 </body>
