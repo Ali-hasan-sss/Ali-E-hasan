@@ -592,7 +592,6 @@ hr{
 .footer-content p{
   color: var(--lightcolor);
   text-align: center;
-  width: 300px;
   margin-top: 1rem;
   font-size: 10px;
 }
@@ -711,9 +710,7 @@ footer .footer-content .end{
 .footer-content p{
   color: var(--lightcolor);
   text-align: center;
-  width: 300px;
   margin-top: 1rem;
-  font-size: 10px;
 }
 footer .footer-content .end{
   color: var(--primarycolor);
@@ -830,9 +827,7 @@ footer .footer-content .end{
 .footer-content p{
   color: var(--lightcolor);
   text-align: center;
-  width: 300px;
   margin-top: 1rem;
-  font-size: 10px;
 }
 footer .footer-content .end{
   color: var(--primarycolor);
@@ -949,9 +944,7 @@ footer .footer-content .end{
 .footer-content p{
   color: var(--lightcolor);
   text-align: center;
-  width: 300px;
   margin-top: 1rem;
-  font-size: 10px;
 }
 footer .footer-content .end{
   color: var(--primarycolor);
